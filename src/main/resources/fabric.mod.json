@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "chat-to-waypoint",
+	"version": "${version}",
+	"name": "Chat to Waypoint",
+	"description": "A mod coded for a bounty plugin that maps any coordinates sent in chat to waypoints automatically.",
+	"authors": [
+		"fstk5"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/fstk5/chat-to-waypoint"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chat-to-waypoint/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fsk.java.msg2wp.ChatToWaypoint"
+		]
+	},
+	"mixins": [
+		"chat-to-waypoint.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
